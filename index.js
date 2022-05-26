@@ -120,7 +120,7 @@ async function run() {
       res.send(services);
     });
 
-    //for dashbord bookin show
+    //for dashbord booking
 
     app.get("/booking", verifyJWT, async (req, res) => {
       const customer_email = req.query.customer_email;
