@@ -161,10 +161,7 @@ async function run() {
       res.send(result);
     });
 
-    //for update
-
-    //    app.put('/updateProfile/:id', async(req, res)=>{
-    //        const id = req.params.id;
+    
     //        const updateProfile= req.body;
     //        const filter = {_id: ObjectID(id)};
     //        const options = {upsert: true};
