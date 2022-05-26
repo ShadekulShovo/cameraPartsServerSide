@@ -161,9 +161,6 @@ async function run() {
       res.send(result);
     });
 
-    
-    //        const updateProfile= req.body;
-    //        const filter = {_id: ObjectID(id)};
     //        const options = {upsert: true};
     //        const updatedDoc = {
     //            $set:{
