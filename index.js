@@ -161,8 +161,6 @@ async function run() {
       res.send(result);
     });
 
-    //        const options = {upsert: true};
-    //        const updatedDoc = {
     //            $set:{
     //              address: updateProfile.address,
     //              mobile: updateProfile.mobile
