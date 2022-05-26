@@ -161,9 +161,6 @@ async function run() {
       res.send(result);
     });
 
-    //        res.send(result);
-    //    })
-
     //for payment booking
     app.get("/booking/:id", async (req, res) => {
       const id = req.params.id;
