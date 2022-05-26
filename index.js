@@ -161,8 +161,6 @@ async function run() {
       res.send(result);
     });
 
-    //            $set:{
-    //              address: updateProfile.address,
     //              mobile: updateProfile.mobile
     //            }
     //        };
