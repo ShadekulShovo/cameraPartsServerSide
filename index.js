@@ -14,13 +14,6 @@ const port = process.env.PORT || 8000;
 app.use(cors());
 app.use(express.json());
 
-// const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.ewthq.mongodb.net/?retryWrites=true&w=majority`;
-// const client = new MongoClient(uri, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-//   serverApi: ServerApiVersion.v1,
-// });
-
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.r2usi.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
@@ -142,12 +135,6 @@ async function run() {
       }
     });
 
-    // app.post('/review', async(req, res)=>{
-    //     const review = req.body;
-    //     const result = await reviewCollection.insertOne(review);
-    //     res.send(result);
-    // })
-
     app.get("/review", async (req, res) => {
       const query = {};
       const cursor = reviewCollection.find(query);
@@ -228,5 +215,3 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
-
-// ACCESS_TOKEN_SECRET=238aef5b416e426a072e85e528c9ede61ba295fb4a8f1589e8c08f030e0421705c611f74cd2ffd3314994c550ccecdaf4f57ab8960e79bbca386672ed68c3854
