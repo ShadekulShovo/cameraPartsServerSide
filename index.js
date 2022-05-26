@@ -161,7 +161,6 @@ async function run() {
       res.send(result);
     });
 
-    //        const result = await bookingCollection.updateOne(filter, updatedDoc, options);
     //        res.send(result);
     //    })
 
